@@ -13,7 +13,7 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   valid = (1..5).find {|i|planeteer_calls[i]==valid_calls[i]}
-  planeteer_calls[valid-1]
+  valid_calls[valid-1]
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above 
   # Return the first valid call found, or return nil if no valid calls are found
 end
